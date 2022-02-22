@@ -2,7 +2,6 @@ from inspect import getfullargspec
 
 
 def curry(func):
-    """This doesn't work"""
     args, *_ = getfullargspec(func)
     context = {"func0": func}
     for i in range(len(args)-1):
