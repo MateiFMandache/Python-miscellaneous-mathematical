@@ -9,5 +9,6 @@ def _numeral(n, g, x):
 
 
 numeral = curry(_numeral)
+identity = lambda n: n
 succ = lambda n: n + 1
 zero = 0
